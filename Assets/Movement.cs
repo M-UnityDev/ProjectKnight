@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     private Vector3 newpos;
     private float h;
     private Vector3 v;
-    float angl = 0;
+    private float angl = 0;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
