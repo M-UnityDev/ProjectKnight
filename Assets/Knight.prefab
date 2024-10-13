@@ -863,6 +863,59 @@ Transform:
   - {fileID: 3854111598004539297}
   m_Father: {fileID: 7061203381427781811}
   m_LocalEulerAnglesHint: {x: -1.8936889, y: 0.57296634, z: -26.266489}
+--- !u!1 &4178305009793303017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5074924166194568006}
+  - component: {fileID: 5127212876517883318}
+  m_Layer: 3
+  m_Name: DialTrig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5074924166194568006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178305009793303017}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6717549987124277457}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5127212876517883318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178305009793303017}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.6, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4827848466795171528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,7 +1222,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5888441705501221323}
   serializedVersion: 4
-  m_Mass: 100
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1186,8 +1239,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
-  m_CollisionDetection: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!114 &4693414495087304769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe8b16125c06670d8d39c50ea4c7581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spd: 10
+  spd: 5
+  jmspd: 6
   rotob: {fileID: 7606903710191764707}
 --- !u!1 &6068102030159667653
 GameObject:
@@ -1393,6 +1447,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2183946943744472396}
+  - {fileID: 5074924166194568006}
   m_Father: {fileID: 4099880556455809349}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7840162097773606219
