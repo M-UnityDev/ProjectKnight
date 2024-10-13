@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         an = GetComponent<Animator>();
-        an.CrossFade("Idle",1);
+        an.CrossFade("Idle",0);
     }
     private void Update()
     {
