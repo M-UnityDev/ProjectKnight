@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03d90804509ae9b5bb112e2e55152373
+guid: dc7f44e2c665649d885c7f5823064552
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -30,7 +30,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 100
@@ -40,7 +40,7 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 0
-    importBlendShapes: 0
+    importBlendShapes: 1
     importCameras: 0
     importLights: 0
     nodeNameCollisionStrategy: 1
@@ -99,7 +99,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

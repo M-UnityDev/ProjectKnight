@@ -2,9 +2,20 @@ using UnityEngine;
 
 public class isgnd : MonoBehaviour
 {
-    [SerializeField] private LayerMask lr;
+    private bool isgnds = true;
     public bool isgn()
     {
-        return Physics.OverlapBox(transform.position, transform.localScale/2, Quaternion.identity, lr).Length != 0;
+        return isgnds;
+    }
+    private void OnTriggerEnter(Collider coll)
+    {
+        print(coll);
+        isgnds = true;
+    }
+    private void OnTriggerExit(Collider coll)
+    {
+
+        print(coll);
+        isgnds = false;
     }
 }
