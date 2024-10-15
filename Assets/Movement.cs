@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         an = GetComponent<Animator>();
         coll = GetComponent<BoxCollider>();
+
         an.CrossFade("Idle",0);
         //Time.timeScale = 0.1f;
     }
@@ -31,10 +32,10 @@ public class Movement : MonoBehaviour
     {
         skcoll.BakeMesh(mh);
         vb.Set(mh.bounds.center.x, mh.bounds.center.y+of, mh.bounds.center.z);
-        vbh.Set(mh.bounds.center.x, (-mh.bounds.size.y/2)+mh.bounds.center.y + of+0.001f, mh.bounds.center.z);
+        vbh.Set(mh.bounds.center.x, (-mh.bounds.size.y/2)+mh.bounds.center.y + of-0.1f, mh.bounds.center.z);
         vbha.Set(mh.bounds.size.x, mh.bounds.size.y, mh.bounds.size.z-1);
-        coll.size = vbha;
-        coll.center = vb;
+        //coll.size = vbha;
+        //coll.center = vb;
         //rotob.GetComponent<BoxCollider>().center = vbh;
         //h = rotob.GetComponent<isgnd>().isgn() ? Input.GetAxisRaw("Horizontal") : rb.linearVelocity.x/spd;
         h = Input.GetAxisRaw("Horizontal");
@@ -42,9 +43,14 @@ public class Movement : MonoBehaviour
         if(rotob.GetComponent<isgnd>().isgn() && Input.GetButtonDown("Jump"))
         {
             rb.linearVelocity = Vector3.up * jmspd;
-            an.CrossFade("Jmp",1);
+            //an.CrossFade("Jmp",1);
         }
-        an.SetBool("iswak",h != 0);
+        if (!rotob.GetComponent<isgnd>().isgn()) //&& !GetComponent<isgnd>().isgn())
+        {
+
+        }
+        an.SetBool("isjmp",!rotob.GetComponent<isgnd>().isgn());
+        an.SetBool("iswak",h != 0 && rotob.GetComponent<isgnd>().isgn());
         v.Set(h*spd,rb.linearVelocity.y,0);
         rb.linearVelocity = v;
         if (h > 0)

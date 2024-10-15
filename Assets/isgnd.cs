@@ -9,13 +9,14 @@ public class isgnd : MonoBehaviour
     }
     private void OnTriggerEnter(Collider coll)
     {
-        print(coll);
-        isgnds = true;
+        if(!coll.isTrigger)
+        //print(coll);
+            isgnds = true;
     }
     private void OnTriggerExit(Collider coll)
     {
-
-        print(coll);
-        isgnds = false;
+        if(!coll.isTrigger)
+        //print(coll);
+            isgnds = false;
     }
 }
