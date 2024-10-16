@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Recently I have seen a very strange situation...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac13c190a215353cb8d9448991634b46, type: 2}
-  m_sharedMaterial: {fileID: 4767256323731543532, guid: ac13c190a215353cb8d9448991634b46, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 64eddf9915bb8544c8f365463b59fdda, type: 2}
+  m_sharedMaterial: {fileID: 6190583609948874555, guid: 64eddf9915bb8544c8f365463b59fdda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
