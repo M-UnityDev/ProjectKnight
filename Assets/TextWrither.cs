@@ -6,7 +6,7 @@ public class TextWrither : MonoBehaviour
 {
     [SerializeField] private string s;
     [SerializeField] private TMP_Text tx;
-    [SerializeField] private AudioClip aud;
+
     [SerializeField] private AudioClip ad;
     [SerializeField] private AudioSource au;
 
@@ -14,19 +14,44 @@ public class TextWrither : MonoBehaviour
     {
         StartCoroutine(nameof(WriteText));
     }
-
+    public void WritText(string text)
+    {
+        StopCoroutine(nameof(WriteText));
+        s = text;
+        StartCoroutine(nameof(WriteText));
+    }
     // Update is called once per frame
     void Update()
     {
-        au.PlayOneShot(ad);
-        au.PlayOneShot(aud);
     }
     private IEnumerator WriteText()
     {
+        tx.text = null;
+        tx.text += "<size=100><color=#ff0000>";
         foreach(char c in s)
         {
-            yield return new WaitForSeconds(0.1f);
-            tx.text += "<size=50>"+c;
+            yield return new WaitForSeconds(0.05f);
+            tx.text = tx.text.Replace("<size=25>","<size=50>");
+            tx.text = tx.text.Replace("<color=#00000032>","<color=#0000007D>");
+            yield return new WaitForSeconds(0.05f);
+            tx.text = tx.text.Replace("<size=50>","<size=75>");
+            tx.text = tx.text.Replace("<color=#0000007D>","<color=#000000AF>");
+            yield return new WaitForSeconds(0.05f);
+            tx.text = tx.text.Replace("<size=75>","<size=100>");
+            tx.text = tx.text.Replace("<color=#000000AF>","<color=#000000FF>");
+            if(tx.text != "<size=100><color=#ff0000>")
+                tx.text += "<size=25><color=#0000007D>"+c;
+            else
+                tx.text += c+"<color=#000000>";
         }
+        yield return new WaitForSeconds(0.1f);
+        tx.text = tx.text.Replace("<size=25>","<size=50>");
+        tx.text = tx.text.Replace("<color=#00000032>","<color=#0000007D>");
+        yield return new WaitForSeconds(0.1f);
+        tx.text = tx.text.Replace("<size=50>","<size=75>");
+        tx.text = tx.text.Replace("<color=#0000007D>","<color=#000000AF>");
+        yield return new WaitForSeconds(0.1f);
+        tx.text = tx.text.Replace("<size=75>","<size=100>");
+        tx.text = tx.text.Replace("<color=#000000AF>","<color=#000000FF>");
     }
 }
