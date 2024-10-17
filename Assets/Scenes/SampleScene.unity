@@ -12583,6 +12583,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7917159816718573761, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917159816718573761, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917159816718573761, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_Center.y
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8044283569752393402, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
       propertyPath: m_Layer
       value: 3
