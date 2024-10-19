@@ -12173,7 +12173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1271191782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22227,6 +22227,42 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -700.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 550.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995039304819781591, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3181197039771542776, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -22359,6 +22395,10 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5583777757471882088, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.078431375
+      objectReference: {fileID: 0}
     - target: {fileID: 5708218435059419814, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -22402,6 +22442,10 @@ PrefabInstance:
     - target: {fileID: 6815330814308300763, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973814024897250692, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7464129830082423246, guid: 7275b68aa09100c388b8ffcbb041b935, type: 3}
       propertyPath: m_Layer
