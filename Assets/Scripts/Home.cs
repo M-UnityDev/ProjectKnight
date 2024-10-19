@@ -8,13 +8,13 @@ public class Home : MonoBehaviour
     [SerializeField] private GameObject vc1;
     [SerializeField] private GameObject vc2;
     [SerializeField] private string HomeScn;
+    [SerializeField] private GameObject plr;
+    [SerializeField] private GameObject blcscr;
+    [SerializeField] private Vector3 hospos;
+    private Vector3 vec;
+    private float i;
     private bool isn;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (isn && Input.GetButtonDown("Submit"))
@@ -44,8 +44,27 @@ public class Home : MonoBehaviour
     }
     private IEnumerator goHom()
     {
+        i=1;
         vc2.SetActive(true);
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(HomeScn);
+        while (plr.transform.localScale != Vector3.zero)
+        {
+            i -= 0.1f;
+            if(i < 0.1f)
+            {
+                i = 0;
+            }
+            vec.Set(i,i,i);
+            plr.transform.localScale = vec;
+            yield return new WaitForSeconds(0.05f);
+        }
+        yield return new WaitForSeconds(1f);
+        GameObject.Find("Knight").transform.position = hospos;
+        vec.Set(1,1,1);
+        plr.transform.localScale = vec;
+        //SceneManager.LoadScene(HomeScn, LoadSceneMode.Additive);
+        blcscr.SetActive(true);
+        vc2.SetActive(false);
+        yield return new WaitForSeconds(1.5f);
+        blcscr.SetActive(false);
     }
 }
