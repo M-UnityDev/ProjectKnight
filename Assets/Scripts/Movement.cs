@@ -4,8 +4,8 @@ public class Movement : MonoBehaviour
 {
     private Rigidbody rb;
     private Animator an;
-    [SerializeField] private int spd;
-    [SerializeField] private int jmspd;
+    public int spd;
+    public int jmspd;
     [SerializeField] private GameObject rotob;
     private BoxCollider coll;
     [SerializeField] private SkinnedMeshRenderer skcoll;
@@ -42,14 +42,15 @@ public class Movement : MonoBehaviour
         hv = rotob.GetComponent<isgnd>().isgn() ? Input.GetAxisRaw("Horizontal") : 0;
         if(rotob.GetComponent<isgnd>().isgn() && Input.GetButtonDown("Jump"))
         {
+            //an.CrossFade("Jmp",0.1f);
             rb.linearVelocity = Vector3.up * jmspd;
-            //an.CrossFade("Jmp",1);
         }
         if (!rotob.GetComponent<isgnd>().isgn()) //&& !GetComponent<isgnd>().isgn())
         {
-
+            an.CrossFade("Jmp",0.25f);
         }
-        an.SetBool("isjmp",!rotob.GetComponent<isgnd>().isgn());
+        //print(!rotob.GetComponent<isgnd>().isgn());
+        an.SetBool("isjmp",rotob.GetComponent<isgnd>().isgn());
         an.SetBool("iswak",h != 0 && rotob.GetComponent<isgnd>().isgn());
         v.Set(h*spd,rb.linearVelocity.y,0);
         rb.linearVelocity = v;

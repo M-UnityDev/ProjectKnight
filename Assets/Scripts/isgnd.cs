@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class isgnd : MonoBehaviour
 {
-    private bool isgnds = true;
+    private bool isgnds = false;
     public bool isgn()
     {
         return isgnds;
