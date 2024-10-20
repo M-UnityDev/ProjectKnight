@@ -1,12 +1,12 @@
 using UnityEngine;
 using System.Collections;
-using Unity.Cinemachine;
 public class StartCutscene : MonoBehaviour
 {
     [SerializeField] private Canvas canv;
     [SerializeField] private GameObject cam;
     private void Awake()
     {
+        PlayerPrefs.SetInt("Cube",0);
         cam.GetComponent<Animator>().CrossFade("CamFad",0);
         GetComponent<Movement>().spd = 0;
         GetComponent<Movement>().jmspd = 0;

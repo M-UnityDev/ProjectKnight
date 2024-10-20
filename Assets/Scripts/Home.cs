@@ -65,6 +65,8 @@ public class Home : MonoBehaviour
         blcscr.SetActive(true);
         vc2.SetActive(false);
         yield return new WaitForSeconds(1.5f);
+        blcscr.GetComponent<Animator>().CrossFade("fadeout",0);
+        yield return new WaitForSeconds(1f);
         blcscr.SetActive(false);
     }
 }
