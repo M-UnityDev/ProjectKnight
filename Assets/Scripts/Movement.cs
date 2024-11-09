@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
     private Animator an;
     public int spd;
     public int jmspd;
+    public bool iscut;
     [SerializeField] private GameObject rotob;
     private BoxCollider coll;
     [SerializeField] private SkinnedMeshRenderer skcoll;
@@ -51,7 +52,7 @@ public class Movement : MonoBehaviour
         }
         //print(!rotob.GetComponent<isgnd>().isgn());
         an.SetBool("isjmp",rotob.GetComponent<isgnd>().isgn());
-        an.SetBool("iswak",h != 0 && rotob.GetComponent<isgnd>().isgn());
+        an.SetBool("iswak",h != 0 && rotob.GetComponent<isgnd>().isgn() && !iscut);
         v.Set(h*spd,rb.linearVelocity.y,0);
         rb.linearVelocity = v;
         if (h > 0)

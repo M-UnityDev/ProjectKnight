@@ -25,6 +25,7 @@ public class MunitTalk : MonoBehaviour
     {
         vc.SetActive(true);
         dil.SetActive(true);
+        GameObject.Find("Knight").GetComponent<Movement>().iscut = true;
         namtxt.text = nam;
         GameObject.Find("Knight").GetComponent<Movement>().spd = 0;
         GameObject.Find("Knight").GetComponent<Movement>().jmspd = 0;
@@ -41,6 +42,8 @@ public class MunitTalk : MonoBehaviour
         }
         GameObject.Find("Knight").GetComponent<Movement>().spd = 5;
         GameObject.Find("Knight").GetComponent<Movement>().jmspd = 8;
+        GetComponent<Collider>().enabled = false;
+        GameObject.Find("Knight").GetComponent<Movement>().iscut = false;
         vc.SetActive(false);
         dil.SetActive(false);
     } 

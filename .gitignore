@@ -75,3 +75,6 @@ crashlytics-build.properties
 /Project Knight/Logs
 /Project Knight/Temp
 /Project Knight/UserSettings
+/.vscode
+.vsconfig
+.vscode/settings.json

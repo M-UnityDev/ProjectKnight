@@ -49,24 +49,27 @@ public class Home : MonoBehaviour
         while (plr.transform.localScale != Vector3.zero)
         {
             i -= 0.1f;
-            if(i < 0.1f)
+            if(i <= 0.1f)
             {
                 i = 0;
+                print("A");
             }
             vec.Set(i,i,i);
             plr.transform.localScale = vec;
             yield return new WaitForSeconds(0.05f);
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.3f);
         GameObject.Find("Knight").transform.position = hospos;
         vec.Set(1,1,1);
         plr.transform.localScale = vec;
         //SceneManager.LoadScene(HomeScn, LoadSceneMode.Additive);
         blcscr.SetActive(true);
+        blcscr.GetComponent<Animator>().CrossFade("Empty", 0);
         vc2.SetActive(false);
         yield return new WaitForSeconds(1.5f);
         blcscr.GetComponent<Animator>().CrossFade("fadeout",0);
         yield return new WaitForSeconds(1f);
+        blcscr.GetComponent<Animator>().CrossFade("Empty", 0);
         blcscr.SetActive(false);
     }
 }
