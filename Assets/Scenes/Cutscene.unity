@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -129,9 +130,8 @@ GameObject:
   - component: {fileID: 36379215}
   - component: {fileID: 36379218}
   - component: {fileID: 36379217}
-  - component: {fileID: 36379216}
   m_Layer: 0
-  m_Name: back (3)
+  m_Name: Page1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,28 +158,6 @@ RectTransform:
   m_AnchoredPosition: {x: -961, y: 0}
   m_SizeDelta: {x: 911, y: 0}
   m_Pivot: {x: 0, y: 0.5}
---- !u!95 &36379216
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36379214}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e536386136e0b94785d3936a9cefc61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &36379217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,9 +207,8 @@ GameObject:
   - component: {fileID: 174777964}
   - component: {fileID: 174777967}
   - component: {fileID: 174777966}
-  - component: {fileID: 174777965}
   m_Layer: 0
-  m_Name: back (6)
+  m_Name: Page2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,28 +235,6 @@ RectTransform:
   m_AnchoredPosition: {x: -961, y: 0}
   m_SizeDelta: {x: 911, y: 0}
   m_Pivot: {x: 0, y: 0.5}
---- !u!95 &174777965
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174777963}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e536386136e0b94785d3936a9cefc61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &174777966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +564,7 @@ GameObject:
   - component: {fileID: 527123107}
   - component: {fileID: 527123106}
   m_Layer: 0
-  m_Name: backgnd (1)
+  m_Name: BookBackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,7 +641,7 @@ GameObject:
   - component: {fileID: 529290533}
   - component: {fileID: 529290532}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Page1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +791,7 @@ GameObject:
   - component: {fileID: 572844687}
   - component: {fileID: 572844686}
   m_Layer: 0
-  m_Name: Text (TMP) (1)
+  m_Name: CoverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -973,7 +928,7 @@ GameObject:
   - component: {fileID: 823330357}
   - component: {fileID: 823330356}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Page2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,6 +1114,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 0
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &983522095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1157,7 @@ GameObject:
   - component: {fileID: 1004124572}
   - component: {fileID: 1004124571}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,7 +1294,7 @@ GameObject:
   - component: {fileID: 1033810226}
   - component: {fileID: 1033810225}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: BookCoverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1489,7 +1445,7 @@ GameObject:
   - component: {fileID: 1269467193}
   - component: {fileID: 1269467192}
   m_Layer: 0
-  m_Name: Button
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1712,11 +1668,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1950998716}
   - {fileID: 2052452227}
   - {fileID: 36379215}
   - {fileID: 174777964}
   - {fileID: 1842388545}
+  - {fileID: 1950998716}
   m_Father: {fileID: 1668632787}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1839,26 +1795,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218e2eb70852bc00b8693ae9870224b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt1: {fileID: 1033810223}
+  BookCover: {fileID: 2052452227}
+  BookCoverText: {fileID: 1033810225}
   tx1: Once upon a time, a brave knight lived in the kingdom of ----. He noticed
     a very strange chicken, while patrolling the forest near the castle.
-  pg1: {fileID: 36379214}
-  txt2: {fileID: 529290530}
+  Page1: {fileID: 36379215}
+  txt2: {fileID: 529290532}
   tx2: It looked, as he described it, "unnaturally flat", which surprised him greatly.
     The intrigued knight decided to watch the chicken.
-  pg2: {fileID: 174777963}
-  txt3: {fileID: 823330354}
+  Page2: {fileID: 174777964}
+  txt3: {fileID: 823330356}
   tx3: After some time, he saw that it approached a barely noticeable crevice in
     the rock and disappeared, as if it had dissolved into thin air. The knight approached
     that place and saw a shimmering portal in front of him.
-  pg3: {fileID: 1842388544}
-  pg4: {fileID: 1950998715}
-  txt4: {fileID: 1576687356}
-  a: {fileID: 1668632786}
+  Page3: {fileID: 1842388545}
+  txt4: {fileID: 1576687358}
   tx4: For a long time, he hesitated to enter, not knowing what dangers and secrets
     were hidden on the other side. But his curiosity and thirst for new discoveries
     took over and he took a step forward, finding himself in a completely new world.
-  pgbg: {fileID: 2052452226}
+  LastPage: {fileID: 1950998716}
+  Book: {fileID: 1668632787}
 --- !u!1 &1568299580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +1903,7 @@ GameObject:
   - component: {fileID: 1576687359}
   - component: {fileID: 1576687358}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Page3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2097,7 +2053,7 @@ GameObject:
   - component: {fileID: 1648179927}
   - component: {fileID: 1648179929}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: DirectionalLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2353,9 +2309,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668632787}
-  - component: {fileID: 1668632788}
   m_Layer: 0
-  m_Name: a
+  m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2382,28 +2337,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1668632788
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668632786}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6ec36a1ce792714a5a4c4fb9eeb02328, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1699630074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,7 +2349,7 @@ GameObject:
   - component: {fileID: 1699630077}
   - component: {fileID: 1699630076}
   m_Layer: 0
-  m_Name: backgnd (1)
+  m_Name: Cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2491,9 +2424,8 @@ GameObject:
   - component: {fileID: 1842388545}
   - component: {fileID: 1842388548}
   - component: {fileID: 1842388547}
-  - component: {fileID: 1842388546}
   m_Layer: 0
-  m_Name: back (7)
+  m_Name: Page3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2520,28 +2452,6 @@ RectTransform:
   m_AnchoredPosition: {x: -961, y: 0}
   m_SizeDelta: {x: 911, y: 0}
   m_Pivot: {x: 0, y: 0.5}
---- !u!95 &1842388546
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1842388544}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e536386136e0b94785d3936a9cefc61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1842388547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2591,9 +2501,8 @@ GameObject:
   - component: {fileID: 1950998716}
   - component: {fileID: 1950998718}
   - component: {fileID: 1950998717}
-  - component: {fileID: 1950998719}
   m_Layer: 0
-  m_Name: back (5)
+  m_Name: Page4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2658,28 +2567,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950998715}
   m_CullTransparentMesh: 1
---- !u!95 &1950998719
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950998715}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e536386136e0b94785d3936a9cefc61, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2052452226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,9 +2578,8 @@ GameObject:
   - component: {fileID: 2052452227}
   - component: {fileID: 2052452229}
   - component: {fileID: 2052452228}
-  - component: {fileID: 2052452230}
   m_Layer: 0
-  m_Name: back (4)
+  m_Name: BookCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2758,28 +2644,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052452226}
   m_CullTransparentMesh: 1
---- !u!95 &2052452230
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052452226}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 130c9330a54a604ebabe4c5b4b86c06e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2142439342
 GameObject:
   m_ObjectHideFlags: 0
